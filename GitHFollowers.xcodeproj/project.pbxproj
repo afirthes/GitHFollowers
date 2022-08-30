@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		088F06B328BD431D00877584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06B228BD431D00877584 /* AppDelegate.swift */; };
 		088F06B528BD431D00877584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06B428BD431D00877584 /* SceneDelegate.swift */; };
-		088F06B728BD431D00877584 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06B628BD431D00877584 /* ViewController.swift */; };
 		088F06BC28BD431F00877584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088F06BB28BD431F00877584 /* Assets.xcassets */; };
 		088F06BF28BD431F00877584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088F06BD28BD431F00877584 /* LaunchScreen.storyboard */; };
+		088F06C728BE330500877584 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06C628BE330500877584 /* SearchVC.swift */; };
+		088F06C928BE332F00877584 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06C828BE332F00877584 /* FavoritesListVC.swift */; };
+		088F06EB28BE45AD00877584 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06EA28BE45AD00877584 /* TabBarController.swift */; };
+		088F06ED28BE49CB00877584 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06EC28BE49CB00877584 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		088F06AF28BD431D00877584 /* GitHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088F06B228BD431D00877584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		088F06B428BD431D00877584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		088F06B628BD431D00877584 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		088F06BB28BD431F00877584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		088F06BE28BD431F00877584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		088F06C028BD431F00877584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088F06C628BE330500877584 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		088F06C828BE332F00877584 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		088F06EA28BE45AD00877584 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		088F06EC28BE49CB00877584 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				088F06B228BD431D00877584 /* AppDelegate.swift */,
 				088F06B428BD431D00877584 /* SceneDelegate.swift */,
-				088F06B628BD431D00877584 /* ViewController.swift */,
 				088F06BB28BD431F00877584 /* Assets.xcassets */,
 				088F06BD28BD431F00877584 /* LaunchScreen.storyboard */,
 				088F06C028BD431F00877584 /* Info.plist */,
+				088F06C628BE330500877584 /* SearchVC.swift */,
+				088F06C828BE332F00877584 /* FavoritesListVC.swift */,
+				088F06EA28BE45AD00877584 /* TabBarController.swift */,
+				088F06EC28BE49CB00877584 /* UIColor+Extension.swift */,
 			);
 			path = GitHFollowers;
 			sourceTree = "<group>";
@@ -134,8 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				088F06B728BD431D00877584 /* ViewController.swift in Sources */,
+				088F06C928BE332F00877584 /* FavoritesListVC.swift in Sources */,
+				088F06C728BE330500877584 /* SearchVC.swift in Sources */,
 				088F06B328BD431D00877584 /* AppDelegate.swift in Sources */,
+				088F06ED28BE49CB00877584 /* UIColor+Extension.swift in Sources */,
+				088F06EB28BE45AD00877584 /* TabBarController.swift in Sources */,
 				088F06B528BD431D00877584 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
