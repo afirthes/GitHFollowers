@@ -15,6 +15,8 @@
 		088F06C928BE332F00877584 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06C828BE332F00877584 /* FavoritesListVC.swift */; };
 		088F06EB28BE45AD00877584 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06EA28BE45AD00877584 /* TabBarController.swift */; };
 		088F06ED28BE49CB00877584 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06EC28BE49CB00877584 /* UIColor+Extension.swift */; };
+		088F06EF28BE567B00877584 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06EE28BE567B00877584 /* GFButton.swift */; };
+		088F06F128BE5BA400877584 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F06F028BE5BA400877584 /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		088F06C828BE332F00877584 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		088F06EA28BE45AD00877584 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		088F06EC28BE49CB00877584 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		088F06EE28BE567B00877584 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		088F06F028BE5BA400877584 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				088F06C828BE332F00877584 /* FavoritesListVC.swift */,
 				088F06EA28BE45AD00877584 /* TabBarController.swift */,
 				088F06EC28BE49CB00877584 /* UIColor+Extension.swift */,
+				088F06EE28BE567B00877584 /* GFButton.swift */,
+				088F06F028BE5BA400877584 /* GFTextField.swift */,
 			);
 			path = GitHFollowers;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			files = (
 				088F06C928BE332F00877584 /* FavoritesListVC.swift in Sources */,
 				088F06C728BE330500877584 /* SearchVC.swift in Sources */,
+				088F06F128BE5BA400877584 /* GFTextField.swift in Sources */,
 				088F06B328BD431D00877584 /* AppDelegate.swift in Sources */,
+				088F06EF28BE567B00877584 /* GFButton.swift in Sources */,
 				088F06ED28BE49CB00877584 /* UIColor+Extension.swift in Sources */,
 				088F06EB28BE45AD00877584 /* TabBarController.swift in Sources */,
 				088F06B528BD431D00877584 /* SceneDelegate.swift in Sources */,
