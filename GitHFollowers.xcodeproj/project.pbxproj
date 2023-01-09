@@ -16,6 +16,7 @@
 		080DF6AF294645DD008E743B /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080DF6AE294645DD008E743B /* GFItemInfoVC.swift */; };
 		081009ED296B3F4F004406A9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081009EC296B3F4F004406A9 /* PersistenceManager.swift */; };
 		081009EF296C1B6C004406A9 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081009EE296C1B6C004406A9 /* FavoriteCell.swift */; };
+		081009F2296C56D3004406A9 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081009F1296C56D3004406A9 /* GFTabBarController.swift */; };
 		081B143529485A4100CF6CED /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B143429485A4100CF6CED /* Date+Extension.swift */; };
 		081B143729485A5A00CF6CED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B143629485A5A00CF6CED /* String+Extension.swift */; };
 		083354BD2947338500521968 /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083354BC2947338500521968 /* GFRepoItemVC.swift */; };
@@ -54,6 +55,7 @@
 		080DF6AE294645DD008E743B /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		081009EC296B3F4F004406A9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		081009EE296C1B6C004406A9 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		081009F1296C56D3004406A9 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		081B143429485A4100CF6CED /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		081B143629485A5A00CF6CED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		083354BC2947338500521968 /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
@@ -148,6 +150,14 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
+		081009F0296C56AA004406A9 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				081009F1296C56D3004406A9 /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
 		081B14332948543300CF6CED /* IItemInfoVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		0843B56B28CFB5FE002E8309 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				081009F0296C56AA004406A9 /* TabBarControllers */,
 				080DF6A12945007F008E743B /* Labels */,
 				080DF6A02945006E008E743B /* View Controllers */,
 				080DF69F2945005E008E743B /* Buttons */,
@@ -366,6 +377,7 @@
 				081009ED296B3F4F004406A9 /* PersistenceManager.swift in Sources */,
 				080DF6A92945C392008E743B /* GFSecondaryTitleLabel.swift in Sources */,
 				088F06EF28BE567B00877584 /* GFButton.swift in Sources */,
+				081009F2296C56D3004406A9 /* GFTabBarController.swift in Sources */,
 				088F06F728BE87FB00877584 /* GFBodyLabel.swift in Sources */,
 				080DF6A72945C32A008E743B /* GFUserInfoHeaderVC.swift in Sources */,
 				080DF6A32945021A008E743B /* GFEmptyStateView.swift in Sources */,
