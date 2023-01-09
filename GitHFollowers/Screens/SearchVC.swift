@@ -7,6 +7,47 @@
 
 import UIKit
 
+/*
+ 
+ View/ViewController
+ 1. Configure View -> VC
+ 2. Event Handling -> VC
+ 10. Animation -> VC
+ 
+ Router
+ 3. Navigation -> VC
+ 
+ Adapter
+ 4. Datasource/Delegate -> VC
+ 
+ Presenter
+ 5. Business Logic -> VC/Service
+ 6. Save State -> VC
+ 7. Update Model -> VC
+ 8. Update View -> VC
+ 
+ Configureator
+ 9. Configure Module -> VC
+
+ Model
+ 11. DAO
+ 
+ Service
+ 12. Networking
+ 13. DB
+ 14. Bluetooth/Geo
+ 
+ Provider
+ 15. Facade
+ 
+ Dependency Container
+ 16. DI
+ 
+ 
+ 
+ 
+ */
+
 class SearchVC: UIViewController {
     
     let logoImageView       = UIImageView()
@@ -41,9 +82,11 @@ class SearchVC: UIViewController {
             presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 🤣.", buttonTitle: "Ok")
             return
         }
+        //8. Configure Module
         let followerLitVC = FollowerListVC()
         followerLitVC.userName = userNameTextField.text
         followerLitVC.title = userNameTextField.text
+        //3. Navigation
         navigationController?.pushViewController(followerLitVC, animated: true)
     }
     
