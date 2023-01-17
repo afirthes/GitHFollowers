@@ -8,46 +8,46 @@
 import UIKit
 
 class GFDataLoadingVC: UIViewController {
-  var containerView: UIView!
+    var containerView: UIView!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
-
-  func showLoadingView() {
-    self.containerView = UIView(frame: view.bounds)
-    view.addSubview(self.containerView)
-
-    self.containerView.backgroundColor = .systemBackground
-    self.containerView.alpha = 0
-
-    UIView.animate(withDuration: 0.25) {
-      self.containerView.alpha = 0.8
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 
-    let activityIndicator = UIActivityIndicatorView(style: .large)
-    self.containerView.addSubview(activityIndicator)
+    func showLoadingView() {
+        self.containerView = UIView(frame: view.bounds)
+        view.addSubview(self.containerView)
 
-    activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        self.containerView.backgroundColor = .systemBackground
+        self.containerView.alpha = 0
 
-    NSLayoutConstraint.activate([
-      activityIndicator.centerYAnchor.constraint(equalTo: self.containerView.centerYAnchor),
-      activityIndicator.centerXAnchor.constraint(equalTo: self.containerView.centerXAnchor)
-    ])
+        UIView.animate(withDuration: 0.25) {
+            self.containerView.alpha = 0.8
+        }
 
-    activityIndicator.startAnimating()
-  }
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        self.containerView.addSubview(activityIndicator)
 
-  func dismissLoadingView() {
-    DispatchQueue.main.async {
-      self.containerView.removeFromSuperview()
-      self.containerView = nil
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            activityIndicator.centerYAnchor.constraint(equalTo: self.containerView.centerYAnchor),
+            activityIndicator.centerXAnchor.constraint(equalTo: self.containerView.centerXAnchor)
+        ])
+
+        activityIndicator.startAnimating()
     }
-  }
 
-  func showEmptyStateView(with message: String, in view: UIView) {
-    let emptyStateView = GFEmptyStateView(message: message)
-    emptyStateView.frame = view.bounds
-    view.addSubview(emptyStateView)
-  }
+    func dismissLoadingView() {
+        DispatchQueue.main.async {
+            self.containerView.removeFromSuperview()
+            self.containerView = nil
+        }
+    }
+
+    func showEmptyStateView(with message: String, in view: UIView) {
+        let emptyStateView = GFEmptyStateView(message: message)
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
+    }
 }
