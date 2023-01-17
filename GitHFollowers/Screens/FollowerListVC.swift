@@ -12,7 +12,7 @@ protocol FollowerListVCDelegate: AnyObject {
     func didRequestFollowers(for username: String)
 }
 
-class FollowerListVC: UIViewController {
+class FollowerListVC: GFDataLoadingVC {
     
     enum Section { case main }
     
@@ -216,16 +216,8 @@ extension FollowerListVC: FollowerListVCDelegate {
         let searchFrame = navigationItem.searchController!.searchBar.frame
         let dy = searchFrame.origin.y + searchFrame.height
         collectionView.setContentOffset(CGPoint(x: 0, y: -dy), animated: true)
-//        collectionView.setContentOffset(.zero, animated: false)
         isSearching = false
         getFollowers(userName: userName, page: page)
-        
-
-
-        
-        
     }
-    
-    
     
 }
